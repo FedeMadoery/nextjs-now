@@ -38,4 +38,4 @@ const mapStateToProps = (state) => {
     return {...state};
 };
 
-export default connect(mapStateToProps)(withAuth(SkillmatrixIndex))
+export default connect(mapStateToProps)(SkillmatrixIndex)
