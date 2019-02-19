@@ -1,7 +1,8 @@
 import Link from "next/link";
+import {connect} from "react-redux";
 import Header from "../components/header";
 
-export default () => (
+const _index = (props) => (
     <main>
         <Header/>
         <section>
@@ -11,3 +12,9 @@ export default () => (
         </section>
     </main>
 );
+
+const mapStateToProps = (state) => {
+    return {...state};
+};
+
+export default connect(mapStateToProps)(_index)
