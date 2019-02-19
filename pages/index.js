@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Layout from '../components/commons/Layout';
+import Layout from '../components/Layout';
 import {Link} from 'next/link';
 
 class SkillmatrixIndex extends Component {
