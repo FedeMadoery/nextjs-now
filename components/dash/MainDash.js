@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Menu, Segment, Label, Search, Divider, Dimmer, Loader} from 'semantic-ui-react';
-import {Link} from '../../routes';
+import Link from 'next/Link'
 import _ from 'lodash'
 import Cards from "./Cards";
 import MenuItems from "./MenuItems";

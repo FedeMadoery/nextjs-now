@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Accordion, Button, Form, Icon, Input, Table, Modal, Message} from 'semantic-ui-react';
-import {Router} from "../../../routes";
+import Router from 'next/router'
 import {skillCreate, skillUpdate} from "../../../redux/actions";
 import {connect} from "react-redux";
 import ModalDefault from './Modal';

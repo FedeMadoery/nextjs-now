@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Form, Grid, Header, Message, Segment, TransitionablePortal} from "semantic-ui-react";
-import {Link} from '../../routes';
+import Link from 'next/link'
 import {connect} from "react-redux";
 import {loginUser, loginWithGitHub, loginWithGoogle} from "../../redux/actions";
 import firebase from 'firebase';

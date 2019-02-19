@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Form, Input, Message, Modal} from 'semantic-ui-react';
-import {Router} from "../../../routes";
+import Router from 'next/router'
 import {technologiesCreate} from "../../../redux/actions";
 import {connect} from "react-redux";
 import ModalDefault from './Modal';

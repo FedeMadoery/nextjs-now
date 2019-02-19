@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Accordion, Button, Form, Grid, Table} from 'semantic-ui-react';
-import {Router} from "../../routes";
+import Router from 'next/router';
 import {technologiesCreate, technologiesDelete} from "../../redux/actions";
 import {connect} from "react-redux";
 import _ from "lodash";

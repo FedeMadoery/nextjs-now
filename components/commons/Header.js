@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Icon, Menu} from 'semantic-ui-react';
-import {Link, Router} from '../../routes';
+import Router from 'next/router'
+import Link from "next/link";
 import {connect} from "react-redux";
 import {withRouter} from "next/router";
 import {logoutUser, skillCreate} from "../../redux/actions";
@@ -14,7 +15,7 @@ const _header = (props) => {
     };
 
 
-    const handleItemClick = (e, {name}) => Router.pushRoute(ROUTES[name.toLowerCase()]);
+    const handleItemClick = (e, {name}) => Router.push(ROUTES[name.toLowerCase()]);
 
 
     return (

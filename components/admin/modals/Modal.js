@@ -1,4 +1,4 @@
-import {Router} from "../../../routes";
+import Router from 'next/router'
 import {Modal} from 'semantic-ui-react'
 import {Component} from "react";
 

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Layout from '../components/commons/Layout';
-import {Link} from '../routes';
 import withAuth from "../components/utils/withAuth";
 import {connect} from "react-redux";
 import MainDash from '../components/dash/MainDash'

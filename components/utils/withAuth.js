@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Header} from "semantic-ui-react";
-import {Router} from '../../routes';
+import Router from 'next/router'
+
 
 export default function withAuth(AuthComponent) {
 
@@ -14,7 +15,7 @@ export default function withAuth(AuthComponent) {
 
         componentDidMount () {
             if ((!this.props.auth || !this.props.auth.user.uid) && (!this.props.user || !this.props.user.uid)) {
-                Router.pushRoute('/login')
+                Router.push('/login')
             }
             this.setState({ isLoading: false })
         }
