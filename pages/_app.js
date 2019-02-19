@@ -2,7 +2,6 @@ import App, {Container} from 'next/app'
 import React from 'react'
 import withReduxStore from '../lib/with-redux-store'
 import {Provider} from 'react-redux'
-import {apiKey, authDomain, databaseURL, messagingSenderId, projectId, storageBucket} from "../env";
 import 'firebase/firestore';
 
 class SkillMatrix extends App {
