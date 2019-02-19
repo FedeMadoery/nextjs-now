@@ -1,35 +1,28 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Layout from '../components/commons/Layout';
 import {Link} from '../routes';
-import withAuth from "../components/utils/withAuth";
+import Login from "../components/auth/Login";
 import {connect} from "react-redux";
-import MainDash from '../components/dash/MainDash'
 
-class SkillmatrixIndex extends Component {
-
+class LoginIndex extends React.Component {
 
     // Initial PROPS
-    static getInitialProps ({ reduxStore, req }) {
+    static async getInitialProps({ reduxStore, req }) {
 
-        return {}
+        return {};
     }
 
     render() {
-
-
         return (
 
-            <Layout>
+            <Layout hideHeader>
                 <div>
                     <link
                         rel="stylesheet"
                         href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
                     />
-
-                <MainDash/>
-
+                    <Login/>
                 </div>
-
             </Layout>
         );
     }
@@ -39,4 +32,4 @@ const mapStateToProps = (state) => {
     return {...state};
 };
 
-export default connect(mapStateToProps)(withAuth(SkillmatrixIndex))
+export default connect(mapStateToProps, {})(LoginIndex)
