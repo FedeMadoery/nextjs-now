@@ -16,7 +16,7 @@ export const loginWithGitHub = (token, user) => {
     return (dispatch) => {
         dispatch({type: LOGIN_WITH_GITHUB, payload: {token, user}});
         userDataUpdate({email: user.email});
-        Router.pushRoute('/')
+        Router.push('/')
     };
 };
 
@@ -24,7 +24,7 @@ export const loginWithGoogle = (token, user) => {
     return (dispatch) => {
         dispatch({type: LOGIN_WITH_GOOGLE, payload: {token, user}});
         userDataUpdate({email: user.email});
-        Router.pushRoute('/')
+        Router.push('/')
     };
 };
 
@@ -33,7 +33,7 @@ export const logoutUser = () => {
         dispatch({
             type: LOGOUT_USER
         });
-        Router.pushRoute('/login')
+        Router.push('/login')
     }
 
 };
@@ -43,7 +43,7 @@ const loginUserSuccess = (user) => {
             type: LOGIN_USER_SUCCESS,
             payload: user
         });
-        Router.pushRoute('/')
+        Router.push('/')
     };
 };
 
