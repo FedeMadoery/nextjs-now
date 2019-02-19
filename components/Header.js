@@ -2,7 +2,6 @@ import React from 'react';
 import {Button, Icon, Menu} from 'semantic-ui-react';
 import {Link} from 'next/link';
 import {withRouter, Router} from "next/router";
-import {logoutUser, skillCreate} from "../../redux/actions";
 
 const _header = (props) => {
     //state = {}
